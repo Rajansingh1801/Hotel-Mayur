@@ -144,6 +144,9 @@ nav .logo-img {
   max-width: 170px;
   height: 80px;
 }
+nav .logo-img img {
+  height: 100%;
+}
 nav li.nav-item {
   margin: 0 0px 0 10px;
 }
@@ -537,6 +540,25 @@ nav .social-header {
     "item7 item7 item5 item6 item6";
   gap: 10px;
 }
+
+@media (max-width: 767px) {
+  .gallery .grid-wrap {
+    grid-template-areas:
+      "item1 item2 item3 item3"
+      "item4 item2 item2 item6"
+      "item4 item7 item5 item6";
+  }
+}
+@media (max-width: 576px) {
+  .gallery .grid-wrap {
+    grid-template-areas:
+      "item1 item2 item2"
+      "item3 item2 item2"
+      "item7 item7 item5"
+      "item4 item6 item6";
+  }
+}
+
 .gallery img:hover {
   transform: scale(1.2);
 }
