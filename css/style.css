@@ -130,15 +130,29 @@ ul li {
 .f-wrap {
   flex-wrap: wrap;
 }
+.fs-22 {
+  font-size: 22px;
+}
 body {
   background-color: var(--white);
+}
+.text-justify {
+  text-align: justify;
+}
+ul {
+  padding-left: 0rem;
+}
+.nowrap {
+  white-space: nowrap;
 }
 /* -----------home page-------------------- */
 
 /* ------------Navbar--------------------- */
 nav {
   height: 90px;
+  background-color: white;
   box-shadow: 0 5px 4px rgba(39, 39, 39, 0.2);
+  z-index: 99999;
 }
 nav .logo-img {
   max-width: 170px;
@@ -149,6 +163,18 @@ nav .logo-img img {
 }
 nav li.nav-item {
   margin: 0 0px 0 10px;
+}
+.sub-nav {
+  display: none;
+  background-color: #f1f1f1;
+  min-width: 180px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+}
+.about-nav:hover .sub-nav {
+  display: block !important;
+}
+.sub-nav ul li a:hover {
+  color: #1b8e79;
 }
 nav li .nav-link {
   padding: 12px 0px 12px 10px;
@@ -305,7 +331,9 @@ nav .social-header {
 .address a {
   color: white;
 }
-
+h1 {
+  color: rgb(82, 80, 80);
+}
 .heading {
   width: fit-content;
   /* text-align: center; */
@@ -320,7 +348,7 @@ nav .social-header {
   bottom: 40px;
   /* height: 2px; */
   width: 80%;
-  border-bottom: 5px dashed black;
+  border-bottom: 1px solid rgb(219, 217, 217);
   /* background-color: #a5a3a3; */
 }
 .card {
@@ -628,4 +656,74 @@ footer .social-logo-img {
   width: 40px;
   height: 40px;
   margin: 0px 10px;
+}
+
+/* About page  */
+.about-home {
+  width: 100%;
+  height: calc(100vh - 95px);
+}
+.about-home .img-container {
+  width: 100%;
+  height: 350px;
+  object-fit: cover;
+}
+.about-home .img-container img {
+  width: 100%;
+  max-height: 100%;
+}
+.about-p p {
+  line-height: 30px;
+  font-size: 16px;
+  /* color: gray; */
+}
+.facilities table {
+  width: 100%;
+  /* border: 1px solid black; */
+}
+.facilities .table-bordered {
+  border: 1px solid black;
+}
+.facilities table td {
+  padding: 10px 15px;
+}
+.about-hari img {
+  width: 100%;
+  height: 500px;
+  border: 5px solid black;
+}
+.about-us-address ul li::marker {
+  content: "👉";
+}
+.about-us-address ul li {
+  padding: 7px 0px;
+}
+.about-hari-card .col-card {
+  margin: 10px 0px;
+}
+.about-hari-card .card {
+  border: none;
+  padding: 20px;
+  box-shadow: 3px 3px 17px rgba(51, 51, 51, 0.3);
+  height: 100%;
+  justify-content: flex-start;
+}
+.about-hari-card img {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+}
+.about-hari-card h5 {
+  padding: 10px 0px;
+}
+
+.about-hari-address ul li::marker {
+  width: 10px;
+  content: url(../assets/icon/right-arro.png);
+  font-size: 20px;
+  padding: 20px;
+}
+.about-hari-address ul li {
+  font-weight: 900;
+  padding: 5px 0px;
 }
