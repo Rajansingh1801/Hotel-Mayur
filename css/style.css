@@ -145,6 +145,10 @@ ul {
 .nowrap {
   white-space: nowrap;
 }
+p {
+  color: #666;
+  font-weight: 500;
+}
 /* -----------home page-------------------- */
 
 /* ------------Navbar--------------------- */
@@ -222,7 +226,14 @@ nav .social-header {
   width: 20px;
   height: 20px;
 }
+@media (max-width: 992px) {
+  nav .logo-img {
+    max-width: 170px;
+    height: 70px;
+  }
+}
 
+/* nav-end */
 .home-line {
   padding: 10px 0px;
   /* height: 40px; */
@@ -310,18 +321,9 @@ nav .social-header {
   background-color: #f4f2f2;
   color: #272727;
 }
-
-#ui-datepicker-div {
-  background-color: white;
-  padding: 20px;
-  border-radius: 10px;
-}
-#ui-datepicker-div table td {
-  padding: 10px;
-  color: black;
-}
-#ui-datepicker-div table td a {
-  color: #181b2c;
+.ui-datepicker-next .ui-widget-header .ui-icon {
+  background-image: url(../assets/icon/right-cal.png) !important;
+  background-position: center;
 }
 
 .address {
@@ -657,6 +659,10 @@ footer .social-logo-img {
   height: 40px;
   margin: 0px 10px;
 }
+footer .footer-logo-img {
+  width: 200px;
+  height: 100px;
+}
 
 /* About page  */
 .about-home {
@@ -719,7 +725,7 @@ footer .social-logo-img {
 
 .about-hari-address ul li::marker {
   width: 10px;
-  content: url(../assets/icon/right-arro.png);
+  content: "👉";
   font-size: 20px;
   padding: 20px;
 }
