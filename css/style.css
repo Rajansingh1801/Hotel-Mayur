@@ -14,7 +14,7 @@
   --black: black;
   --gray: rgb(0, 0, 0, 0.5);
   --red: red;
-  --blue: #1492e6;
+  --blue: #507dd2;
   --thead: #ddf7fa;
   --td: #f4fcfd;
   --brown: brown;
@@ -145,7 +145,9 @@ ul {
 .nowrap {
   white-space: nowrap;
 }
-p {
+p,
+td,
+li {
   color: #666;
   font-weight: 500;
 }
@@ -792,10 +794,10 @@ footer .footer-logo-img {
 
 .view-room-details-btn,
 .price-room-btn {
-  background-color: #1492e6;
+  background-color: #507dd2;
   color: white;
   padding: 5px 20px;
-  border: 2px solid #1492e6;
+  border: 2px solid #507dd2;
 }
 .room-details .carousel img {
   width: 100%;
@@ -818,8 +820,8 @@ footer .footer-logo-img {
 .other-room .btn {
   width: 100%;
   padding: 10px;
-  background-color: #1492e6;
-  border: 2px solid #1492e6;
+  background-color: #507dd2;
+  border: 2px solid #507dd2;
   color: white;
 }
 .other-room .btn:hover {
