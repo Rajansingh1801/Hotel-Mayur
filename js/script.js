@@ -80,7 +80,7 @@ $(document).ready(function () {
     navigationText: true,
     autoPlay: true,
     responsive: true,
-    items: 2,
+    items: 3,
     slideSpeed: 10,
     responsive: {
       0: {

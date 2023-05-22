@@ -233,12 +233,27 @@ nav .social-header {
   }
 }
 
+.book-now-btn button {
+  background-color: #507dd2;
+  border: 2px solid #507dd2;
+  color: white;
+  font-weight: 900;
+  padding: 7px 20px;
+  /* border-radius: 5px; */
+}
+.book-now-btn button:hover {
+  background-color: white;
+  color: black;
+  font-weight: 900;
+  transition: 300ms;
+}
+
 /* nav-end */
 .home-line {
   padding: 10px 0px;
   /* height: 40px; */
   /* vertical-align: middle; */
-  background-color: rgb(27, 90, 93, 0.8);
+  background-color: #507dd2;
 }
 
 .home-line p a {
@@ -327,8 +342,11 @@ nav .social-header {
 }
 
 .address {
-  background-color: #0b6367;
+  background-color: #507dd2;
   color: white;
+}
+.address ul {
+  margin-bottom: 0rem;
 }
 .address a {
   color: white;
@@ -453,7 +471,7 @@ h1 {
   left: 0%;
   right: 0%;
   margin: auto;
-  background-color: sienna;
+  background-color: #507dd2;
   color: white;
   padding: 7px 25px;
   width: fit-content;
@@ -469,27 +487,31 @@ h1 {
 .about h5 {
   padding: 16px 0px;
 }
-.about .btn {
-  color: #1b8e79;
-  text-decoration: none;
-  padding: 2px 0px;
-  margin: 16px 0px;
-}
-.about .seemore-btn {
-  background-color: #1b8e79;
-  border: 1px solid #1b8e79;
 
+.about .seemore-btn {
+  background-color: #507dd2;
+  border: 2px solid #507dd2;
   color: white;
   border-radius: 6px;
   padding: 7px 30px;
 }
 .about .seemore-btn:hover {
   background-color: white;
-  border: 1px solid #1b8e79;
+  border: 2px solid #507dd2;
   color: #181b2c;
 }
+.about .btn {
+  color: white;
+  background-color: #507dd2;
+  text-decoration: none;
+  padding: 7px 20px;
+  margin: 16px 0px;
+  border: 2px solid #507dd2;
+}
 .about .btn:hover {
-  border-bottom: 2px solid #1b8e79;
+  background-color: white;
+  color: black;
+  border: 2px solid #507dd2;
 }
 .about p {
   text-align: justify;
@@ -502,9 +524,9 @@ h1 {
 }
 
 #owl-demo .item {
-  background: #42bdc2;
-  padding: 30px 0px;
+  padding: 30px 30px;
   margin: 10px;
+  font-size: 24px;
   color: #fff;
   -webkit-border-radius: 3px;
   -moz-border-radius: 3px;
@@ -516,11 +538,13 @@ h1 {
   font-size: 20px;
   margin: 0px 8px;
 }
-.Testimonial img {
-  width: 100px;
-  height: 100px;
-  border-radius: 50%;
-  border: 6px solid black;
+.Testimonial .test-cont {
+  display: table;
+}
+
+.Testimonial .quotes-logo {
+  width: 50px;
+  height: 50px;
 }
 .gallery div {
   display: inline-block;
@@ -606,6 +630,9 @@ h1 {
 }
 .contact .focus {
   font-size: 36px;
+}
+.contact p {
+  font-size: 12px;
 }
 footer {
   padding: 60px 0px 10px 0px;
