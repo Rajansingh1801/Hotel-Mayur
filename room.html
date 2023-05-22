@@ -30,39 +30,13 @@
             </button>
             <div class="collapse navbar-collapse bg-white" id="main_nav">
                 <div class="ms-auto">
-                    <div class="text-end social-media-icon">
-                        <div class="d-flex align-item-center justify-content-end">
-                            <div class="d-flex">
-                                <div>
-                                    <a href="#">
-                                        <img src="./assets/images/social/tripadvisor.png" alt="" class="social-header">
-                                    </a>
-                                </div>
-                                <div>
-                                    <a href="#">
-                                        <img src="./assets/images/social/facebook.png" alt="" class="social-header">
-                                    </a>
-                                </div>
-                                <div>
-                                    <a href="#">
-                                        <img src="./assets/images/social/instagram.png" alt="" class="social-header">
-                                    </a>
-                                </div>
-                                <div>
-                                    <a href="#">
-                                        <img src="./assets/images/social/whatsapp.png" alt="" class="social-header">
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
                     <div>
                         <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
                             <li class="nav-item">
                                 <a class="nav-link" aria-current="page" href="./Index.html">Home</a>
                             </li>
                             <li class="nav-item active">
-                                <a class="nav-link" href="#">Room</a>
+                                <a class="nav-link" href="./room.html">Room</a>
                             </li>
 
                             <div class="position-relative about-nav">
@@ -96,19 +70,169 @@
 
 
             </div>
+            <div class="book-now-btn ms-2">
+                <Button>Book Now</Button>
+            </div>
         </div>
     </nav>
 
-    <section class="room-header w-100  h-100">
-        <div class="position-relative">
-            <img src="./assets/images/rooms/header-room.png" alt="" class="img-fluid w-100">
+    <section class="room-header w-100 h-100 position-relative">
+        <div class="">
+            <img src="./assets/images/rooms/room-det.png" alt="" class="img-fluid w-100">
         </div>
-        <div>
-
+        <div class="position-absolute-center">
+            <h1>Rooms</h1>
         </div>
-        <h1>Rooms</h1>
     </section>
 
+    <section class="rate py-5">
+        <div class="container">
+            <h2 class="heading pb-5 position-relative fw-900">Enjoy the pleasure of staying with us</h2>
+            <div>
+                <div id="myBtnContainer" class="text-center">
+                    <button class="btn1 active1" onclick="filterSelection('all')"> All</button>
+                    <button class="btn1" onclick="filterSelection('deluxe')"> Deluxe</button>
+                    <button class="btn1" onclick="filterSelection('luxury')">Luxury</button>
+                </div>
+                <div class="row">
+                    <div class="col-lg-4 col-md-6 col-12 column p-xl-5 p-3 deluxe">
+                        <div class="content text-center  h-100 position-relative">
+                            <div class="imgcont position-relative">
+                                <img src="./assets/images/hotel 1.jpg" alt="img" class="img-fluid">
+                            </div>
+                            <div class="px-3">
+                                <h5 class="py-2">DOUBLE BED <br>
+                                    DELUXE ROOM
+                                </h5>
+                                <p>Double Bed Deluxe room at Hotel Mayur Haridwar offers Comfortable and Healthy stay
+                                    with a perfect bedding & Spacious
+                                    Room setting with Air-conditioning cooler system provided with attached bathroom
+                                    facility, along with LED TV with
+                                    Satellite Connections for perfect picture quality…</p>
+                                <div class="py-3 d-flex justify-content-between align-items-center">
+                                    <button class="price-room-btn">₹ 500</button>
+                                    <button class="view-room-details-btn" onclick="location.href='del-double.html'">View
+                                        Details</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 col-12 column p-xl-5 p-3 deluxe">
+                        <div class="content text-center  h-100 position-relative">
+                            <div class="imgcont position-relative">
+                                <img src="./assets/images/hotel 2.jpg" alt="img" class="img-fluid">
+                            </div>
+                            <div class="px-3">
+                                <h5 class="py-2">TRIPLE BED <br>
+                                    DELUXE ROOM
+                                </h5>
+                                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quod obcaecati dignissimos
+                                    ab ullam maiores in, et aspernatur? Amet voluptatem neque alias. Voluptatum nesciunt
+                                    nostrum, ratione cumque quam inventore commodi nemo!</p>
+                                <div class="py-3 d-flex justify-content-between align-items-center">
+                                    <button class="price-room-btn">₹ 500</button>
+                                    <button class="view-room-details-btn" onclick="location.href='del-triple.html'">View
+                                        Details</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-12 column p-xl-5 p-3 deluxe">
+                        <div class="content text-center  h-100 position-relative">
+                            <div class="imgcont position-relative">
+                                <img src="./assets/images/hotel 3.jpg" alt="img" class="img-fluid">
+                            </div>
+                            <div class="px-3">
+                                <h5 class="py-2">FOUR BED <br>
+                                    DELUXE ROOM
+                                </h5>
+                                <p>Four Bed Deluxe room at Hotel Mayur Haridwar are meant for Family for Four & Group
+                                    Tour stays, having an accommodating
+                                    capacity of Four Persons.
+                                    These types of Rooms are Big, Bright & Extra Spacious, which supplies lovely &
+                                    splendid stay for 4 Members…
+                                </p>
+                                <div class="py-3 d-flex justify-content-between align-items-center">
+                                    <button class="price-room-btn">₹ 500</button>
+                                    <button class="view-room-details-btn" onclick="location.href='del-four.html'">View
+                                        Details</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-12 column p-xl-5 p-3 luxury">
+                        <div class="content text-center  h-100 position-relative">
+                            <div class="imgcont position-relative">
+                                <img src="./assets/images/hotel4.jpg" alt="img" class="img-fluid">
+                            </div>
+                            <div class="px-3">
+                                <h5 class="py-2">DOUBLE BED <br>
+                                    LUXURY ROOM
+                                </h5>
+                                <p>AC Double Bed Rooms at Hotel Mayur Haridwar are Spacious in its layout, this elegant
+                                    room is designed with sleek tile
+                                    floors and is well-furnished with a writing desk, wardrobe for clothing & luggage, a
+                                    dining table for two people, and a
+                                    Queen-size bed & attached bathroom…</p>
+                                <div class="py-3 d-flex justify-content-between align-items-center">
+                                    <button class="price-room-btn">₹ 500</button>
+                                    <button class="view-room-details-btn" onclick="location.href='lux-double.html'">View
+                                        Details</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 col-12 column p-xl-5 p-3 luxury">
+                        <div class="content text-center  h-100 position-relative">
+                            <div class="imgcont position-relative">
+                                <img src="./assets/images/hotel 5.jpg" alt="img" class="img-fluid">
+
+                            </div>
+                            <div class="px-3">
+                                <h5 class="py-2">TRIPLE BED <br>
+                                    LUXURY ROOM
+                                </h5>
+                                <p>AC Triple Bed luxury at Hotel Mayur Haridwar are having one double bed and one single
+                                    bed, these Luxurious and spacious
+                                    rooms are air conditioned with LED tv, well-appointed work desk and sofa seating
+                                    arrangement, clean bathroom…</p>
+                                <div class="py-3 d-flex justify-content-between align-items-center">
+                                    <button class="price-room-btn">₹ 500</button>
+                                    <button class="view-room-details-btn" onclick="location.href='lux-triple.html'">View
+                                        Details</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 col-12 column p-xl-5 p-3 luxury">
+                        <div class="content text-center  h-100 position-relative">
+                            <div class="imgcont position-relative">
+                                <img src="./assets/images/hotel 6.jpg" alt="img" class="img-fluid">
+                            </div>
+                            <div class="px-3">
+                                <h5 class="py-2">FOUR BED <br>
+                                    LUXURY ROOM
+                                </h5>
+                                <p>AC Four Bed Deluxe at Hotel Mayur Haridwar is a Four bedded deluxe rooms with two
+                                    full
+                                    size double beds or twin beds,
+                                    seems to be the perfect set of Luxury on budget for an easy accommodation of four
+                                    persons or a Family. These extra
+                                    spacious big & bright rooms are Air conditioned with LED TV…</p>
+                                <div class="py-3 d-flex justify-content-between align-items-center">
+                                    <button class="price-room-btn">₹ 500</button>
+                                    <button class="view-room-details-btn" onclick="location.href='lux-four.html'">View
+                                        Details</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </section>
 
     <footer>
         <div class="container">
