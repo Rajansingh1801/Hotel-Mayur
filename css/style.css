@@ -149,7 +149,7 @@ p,
 td,
 li {
   color: #666;
-  font-weight: 500;
+  /* font-weight: 500; */
 }
 .position-absolute-center {
   position: absolute;
@@ -833,4 +833,102 @@ footer .footer-logo-img {
 }
 .room-notes ul li {
   padding: 7px 0px;
+}
+
+/* travel guide */
+.travel_guide_banner .carousel img {
+  width: 100%;
+  height: 620px;
+  object-fit: cover;
+}
+.travel-guide-content p {
+  line-height: 30px;
+}
+
+.tour_pakages img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  object-position: left;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+.tour_pakages .travel-card {
+  box-shadow: 0px 0px 15px rgb(128, 128, 128, 0.8);
+  border-radius: 15px;
+}
+.tour_pakages .travel-card:hover {
+  box-shadow: 0px 0px 15px gray;
+}
+.activity .activity-card {
+  background-repeat: no-repeat;
+  background-image: url("../assets/images/travel guide/new-poly.png");
+  height: 300px;
+  border-radius: 20px;
+  background-size: cover;
+  box-shadow: 3px 3px 17px rgba(51, 51, 51, 0.3);
+}
+.activity .activity-card img {
+  width: 100px;
+  height: 100px;
+}
+.activity .activity-card h5 {
+  padding: 10px 0px;
+}
+.day-out .dayout-card {
+  height: 100px;
+  box-shadow: 3px 3px 17px rgba(51, 51, 51, 0.3);
+  /* overflow: hidden; */
+  position: relative;
+  width: 100%;
+}
+.day-out .dayout-card::before {
+  content: "";
+  background: #150f01;
+  height: 100%;
+  width: 100%;
+  bottom: -5px;
+  right: -5px;
+  position: absolute;
+  z-index: -1;
+}
+.day-out .dayout-card .img {
+  width: 100px;
+  height: 100px;
+  overflow: hidden;
+}
+.day-out .dayout-card .img img {
+  object-fit: cover;
+}
+.day-out .dayout-card img:hover {
+  transform: scale(1.1);
+}
+.destination .desti-car {
+  /* background-color: #507dd2; */
+  height: 300px;
+}
+.destination .Joshimath {
+  background-image: url("../assets/images/travel guide/josimath.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.destination .Nainital {
+  background-image: url("../assets/images/travel guide/Jim\ Corbett\ National\ Park.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.destination .dehradun {
+  background-image: url("../assets/images/travel guide/nanital.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.destination .hemkund {
+  background-image: url("../assets/images/travel guide/hemkund.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
