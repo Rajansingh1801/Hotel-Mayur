@@ -164,7 +164,7 @@ nav {
   height: 90px;
   background-color: white;
   box-shadow: 0 5px 4px rgba(39, 39, 39, 0.2);
-  z-index: 99999;
+  z-index: 9999;
 }
 nav .logo-img {
   max-width: 170px;
@@ -860,6 +860,48 @@ footer .footer-logo-img {
 .tour_pakages .travel-card:hover {
   box-shadow: 0px 0px 15px gray;
 }
+.tarvel-testinomial {
+  background-color: rgb(235, 235, 239);
+}
+.tarvel-testinomial h5 {
+  color: black;
+}
+.tarvel-testinomial p {
+  font-size: 16px;
+}
+.tarvel-testinomial .item .content {
+  border: 8px solid white;
+  position: relative;
+  height: 450px;
+  background-color: white;
+}
+.tarvel-testinomial .item .content::before {
+  position: absolute;
+  height: 100%;
+  width: 50%;
+  content: "";
+  background: white;
+  top: 5px;
+  left: 5px;
+  z-index: -2;
+  transform: rotate(-8deg);
+}
+.tarvel-testinomial .item .content::after {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  content: "";
+  background: white;
+  top: -5px;
+  right: 0;
+  z-index: -1;
+  transform: rotate(5deg);
+}
+.tarvel-testinomial .item .content img {
+  width: 100%;
+  height: 300px;
+}
+
 .activity .activity-card {
   background-repeat: no-repeat;
   background-image: url("../assets/images/travel guide/new-poly.png");
@@ -875,22 +917,30 @@ footer .footer-logo-img {
 .activity .activity-card h5 {
   padding: 10px 0px;
 }
+.day-out {
+  background-color: ghostwhite;
+  /* z-index: 3; */
+}
 .day-out .dayout-card {
   height: 100px;
   box-shadow: 3px 3px 17px rgba(51, 51, 51, 0.3);
   /* overflow: hidden; */
   position: relative;
   width: 100%;
+  z-index: 0;
 }
 .day-out .dayout-card::before {
   content: "";
-  background: #150f01;
+  background: #b38925;
   height: 100%;
   width: 100%;
   bottom: -5px;
   right: -5px;
   position: absolute;
   z-index: -1;
+}
+.day-out .day-out-card:hover .day-out-img {
+  transform: scale(1.1);
 }
 .day-out .dayout-card .img {
   width: 100px;
@@ -900,12 +950,16 @@ footer .footer-logo-img {
 .day-out .dayout-card .img img {
   object-fit: cover;
 }
-.day-out .dayout-card img:hover {
+.day-out .dayout-card:hover .day-out-img {
   transform: scale(1.1);
 }
 .destination .desti-car {
   /* background-color: #507dd2; */
   height: 300px;
+  position: relative;
+  border: 3px solid #796102;
+  border-radius: 20px;
+  overflow: hidden;
 }
 .destination .Joshimath {
   background-image: url("../assets/images/travel guide/josimath.jpg");
@@ -931,4 +985,18 @@ footer .footer-logo-img {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+.destination .desti-car h5 {
+  background-color: rgb(24, 27, 44, 0.7);
+  width: 100%;
+  height: 80px;
+  vertical-align: middle;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  bottom: 0;
+  padding: 0px 16px;
 }
