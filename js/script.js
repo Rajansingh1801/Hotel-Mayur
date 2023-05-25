@@ -1,21 +1,21 @@
-document.addEventListener("DOMContentLoaded", function () {
-  window.addEventListener("scroll", function () {
-    if (window.scrollY > 300) {
-      document.getElementById("navbar_top").classList.add("fixed-top");
-      navbar_height = document.querySelector(".navbar").offsetHeight;
-      document.body.style.paddingTop = navbar_height + "px";
-      document.getElementById("navbar_top").style.backgroundColor = "white";
-      document.getElementById("navbar_top").style.zIndex = "1";
-      document.getElementById("navbar_top").style.border = "none";
-    } else {
-      document.getElementById("navbar_top").classList.remove("fixed-top");
-      document.body.style.paddingTop = "0";
-      document.getElementById("navbar_top").style.backgroundColor = "none";
-      document.getElementById("navbar_top").style.zIndex = "1";
-      document.getElementById("navbar_top").style.border = "1px solid #afafaf";
-    }
-  });
-});
+// document.addEventListener("DOMContentLoaded", function () {
+//   window.addEventListener("scroll", function () {
+//     if (window.scrollY > 300) {
+//       document.getElementById("navbar_top").classList.add("fixed-top");
+//       navbar_height = document.querySelector(".navbar").offsetHeight;
+//       document.body.style.paddingTop = navbar_height + "px";
+//       document.getElementById("navbar_top").style.backgroundColor = "white";
+//       document.getElementById("navbar_top").style.zIndex = "1";
+//       document.getElementById("navbar_top").style.border = "none";
+//     } else {
+//       document.getElementById("navbar_top").classList.remove("fixed-top");
+//       document.body.style.paddingTop = "0";
+//       document.getElementById("navbar_top").style.backgroundColor = "none";
+//       document.getElementById("navbar_top").style.zIndex = "1";
+//       document.getElementById("navbar_top").style.border = "1px solid #afafaf";
+//     }
+//   });
+// });
 $(document).ready(function () {
   $("#navbar_top .navbar-nav .nav-link").on("click", function () {
     $("#navbar_top .navbar-nav").find("li.active").removeClass("active");
