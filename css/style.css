@@ -18,6 +18,7 @@
   --thead: #ddf7fa;
   --td: #f4fcfd;
   --brown: brown;
+  --gold: gold;
 }
 i {
   font-size: 16px;
@@ -98,6 +99,9 @@ ul li {
 }
 .text-brown {
   color: var(--brown);
+}
+.text-gold {
+  color: gold;
 }
 
 .fw-100 {
@@ -860,8 +864,19 @@ footer .footer-logo-img {
 .tour_pakages .travel-card:hover {
   box-shadow: 0px 0px 15px gray;
 }
+.tour_pakages .travel-card .btn {
+  background-color: #507dd2;
+  padding: 7px 20px;
+  color: white;
+  border: 1px solid #507dd2;
+}
+.tour_pakages .travel-card .btn:hover {
+  color: #181b2c;
+  background-color: white;
+}
+/* travel-tstimonial */
 .tarvel-testinomial {
-  background-color: rgb(235, 235, 239);
+  background-color: rgb(168, 168, 169);
 }
 .tarvel-testinomial h5 {
   color: black;
@@ -869,11 +884,49 @@ footer .footer-logo-img {
 .tarvel-testinomial p {
   font-size: 16px;
 }
+.tarvel-testinomial .owl-stage {
+  display: flex;
+  align-items: center;
+}
 .tarvel-testinomial .item .content {
   border: 8px solid white;
   position: relative;
-  height: 450px;
+  max-height: 100%;
+  /* height: 500px;
+   */
   background-color: white;
+  z-index: 0;
+}
+.tarvel-testinomial .owl-nav {
+  display: flex;
+  justify-content: space-between;
+}
+.tarvel-testinomial .owl-prev {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  border-radius: 50%;
+}
+.tarvel-testinomial .owl-prev span {
+  border: 5px solid white !important;
+  background-color: #507dd2;
+  color: white;
+  border-radius: 50%;
+  font-size: 50px;
+  padding: 0px 25px;
+}
+.tarvel-testinomial .owl-next {
+  position: absolute;
+  top: 50%;
+  right: 0;
+}
+.tarvel-testinomial .owl-next span {
+  border: 5px solid white !important;
+  background-color: #507dd2;
+  color: white;
+  border-radius: 50%;
+  font-size: 50px;
+  padding: 0px 25px;
 }
 .tarvel-testinomial .item .content::before {
   position: absolute;
@@ -883,8 +936,13 @@ footer .footer-logo-img {
   background: white;
   top: 5px;
   left: 5px;
-  z-index: -2;
+  z-index: -1;
   transform: rotate(-8deg);
+}
+.tarvel-testinomial .owl-theme .owl-nav [class*="owl-"]:hover {
+  background: none;
+  color: #fff;
+  text-decoration: none;
 }
 .tarvel-testinomial .item .content::after {
   position: absolute;
@@ -900,6 +958,15 @@ footer .footer-logo-img {
 .tarvel-testinomial .item .content img {
   width: 100%;
   height: 300px;
+}
+.tarvel-testinomial .item .content .btn {
+  color: white;
+  background-color: #507dd2;
+  border: 2px solid #507dd2;
+}
+.tarvel-testinomial .item .content .btn:hover {
+  background-color: white;
+  color: #181b2c;
 }
 
 .activity .activity-card {
@@ -919,16 +986,23 @@ footer .footer-logo-img {
 }
 .day-out {
   background-color: ghostwhite;
+  background-image: url("../assets/images/travel guide/dayout.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+
   /* z-index: 3; */
 }
 .day-out .dayout-card {
-  height: 150px;
+  height: 100px;
   box-shadow: 3px 3px 17px rgba(51, 51, 51, 0.3);
   /* overflow: hidden; */
   position: relative;
   width: 100%;
   z-index: 0;
 }
+
 .day-out .dayout-card::before {
   content: "";
   background: #b38925;
@@ -939,65 +1013,52 @@ footer .footer-logo-img {
   position: absolute;
   z-index: -1;
 }
-.day-out .day-out-card:hover .day-out-img {
-  transform: scale(1.1);
-}
+
 .day-out .dayout-card .img {
-  width: 150px;
-  height: 150px;
   overflow: hidden;
 }
 .day-out .dayout-card .img img {
-  object-fit: contain;
-  object-position: center;
+  object-fit: cover;
+  width: 100px;
+  transition: 400ms ease-in-out;
+  height: 100px;
+  /* object-position: center; */
 }
 .day-out .dayout-card:hover .day-out-img {
-  transform: scale(1.1);
+  transform: scale(2.9);
 }
 .destination .desti-car {
-  /* background-color: #507dd2; */
   height: 300px;
   position: relative;
   border: 3px solid #796102;
   border-radius: 20px;
   overflow: hidden;
 }
-.destination .Joshimath {
-  background-image: url("../assets/images/travel guide/JOSHIMATH.png");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+.destination .desti-car img {
+  object-fit: cover;
+  height: 300px;
+  width: 100%;
 }
-
-.destination .Nainital {
-  background-image: url("../assets/images/travel guide/JIM\ CORBETT.png");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+.destination .desti-car img:hover {
+  opacity: 0.6;
+  transform: translate3d(0, 0, -10px);
 }
-.destination .dehradun {
-  background-image: url("../assets/images/travel guide/NAINITAL.png");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+.destination .desti-car:hover {
+  background: linear-gradient(45deg, #ff89e9 0%, #05abe0 100%);
 }
-.destination .hemkund {
-  background-image: url("../assets/images/travel guide/HEMKUND\ SAHIB.png");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+.destination .desti-car:hover h5 {
+  bottom: 0;
 }
-
 .destination .desti-car h5 {
-  background-color: rgb(24, 27, 44, 0.7);
+  background-color: rgba(237, 238, 240, 0.7);
   width: 100%;
   height: 80px;
   vertical-align: middle;
-  color: white;
+  color: black;
   display: flex;
   align-items: center;
   justify-content: center;
   position: absolute;
-  bottom: 0;
+  bottom: -100px;
   padding: 0px 16px;
 }
