@@ -1040,21 +1040,25 @@ footer .footer-logo-img {
   width: 100%;
 }
 .destination .desti-car img:hover {
-  opacity: 0.6;
+  opacity: 0.4;
   transform: translate3d(0, 0, -10px);
 }
 .destination .desti-car:hover {
   background: linear-gradient(45deg, #ff89e9 0%, #05abe0 100%);
 }
 .destination .desti-car:hover h5 {
+  top: 0;
   bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
 }
 .destination .desti-car h5 {
-  background-color: rgba(237, 238, 240, 0.7);
+  /* background-color: rgba(237, 238, 240, 0.7); */
   width: 100%;
-  height: 80px;
+  height: 10px;
   vertical-align: middle;
-  color: black;
+  color: white;
   display: flex;
   align-items: center;
   justify-content: center;
