@@ -87,11 +87,11 @@ $(document).ready(function () {
         items: 1,
       },
 
-      480: {
+      576: {
         items: 1,
       },
       768: {
-        items: 2,
+        items: 3,
       },
     },
   });

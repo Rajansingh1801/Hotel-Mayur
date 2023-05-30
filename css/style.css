@@ -170,6 +170,9 @@ nav {
   box-shadow: 0 5px 4px rgba(39, 39, 39, 0.2);
   z-index: 9999;
 }
+.navbar {
+  margin-bottom: 0px !important;
+}
 nav .logo-img {
   max-width: 170px;
   height: 80px;
@@ -243,9 +246,27 @@ nav .social-header {
     max-width: 170px;
     height: 70px;
   }
+  .nav-togle-btn {
+    flex-direction: row-reverse;
+  }
+}
+nav .navbar-toggler {
+  padding: 7px;
+  background-color: white;
+  border: none;
+  box-shadow: 0px 0px 0px white;
+}
+nav .navbar-toggler:is(:focus, :active, :hover) {
+  border: none;
+  box-shadow: 0 0 0 0rem;
 }
 
-.book-now-btn button {
+nav .navbar-toggler img {
+  height: 30px;
+  width: 30px;
+}
+
+.book-now-btn .btn {
   background-color: #507dd2;
   border: 2px solid #507dd2;
   color: white;
@@ -253,7 +274,7 @@ nav .social-header {
   padding: 7px 20px;
   /* border-radius: 5px; */
 }
-.book-now-btn button:hover {
+.book-now-btn .btn:hover {
   background-color: white;
   color: black;
   font-weight: 900;
@@ -650,18 +671,72 @@ h1 {
 .contact p {
   font-size: 12px;
 }
-footer {
-  padding: 60px 0px 10px 0px;
-  background-color: #181b2c;
-}
 
-footer ul li {
-  padding: 10px 0px;
+/* contact -form  */
+.contact-form .contact-box {
+  margin-bottom: 30px;
+  padding-bottom: 30px;
+  border-bottom: 1px solid #2e2e2e;
 }
-
-footer ul li a {
+.contact-form .icon i {
+  font-size: 40px;
+  margin-right: 16px;
+  color: #bead8e;
+}
+.contact-form .input-group {
+  background-color: #f8f8f8;
+  display: flex;
+  padding: 20px;
+  align-items: stretch;
+}
+.contact-form .input-group input {
+  height: 30px;
+  background-color: #f8f8f8;
+  width: 100%;
+  border: none;
+  color: #777777;
+  font-size: 16px;
+}
+.contact-form .main-btn {
   color: white;
-  opacity: 0.9;
+  background-color: #507dd2;
+  text-decoration: none;
+  padding: 7px 20px;
+  margin: 16px 0px;
+  border: 2px solid #507dd2;
+}
+.contact-form .main-btn:hover {
+  background-color: white;
+  color: #181b2c;
+}
+.contact-form .input-group .icon {
+  display: flex;
+  align-items: center;
+}
+.contact-form .input-group .icon i {
+  font-size: 16px;
+}
+.contact-form .input-group textarea {
+  height: 250px;
+  border: none;
+  background-color: #f8f8f8;
+  font-size: 16px;
+  color: #777777;
+}
+
+/* footer  */
+footer {
+  background-image: url(../assets/images/footer.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+footer .footer-body {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: center;
+  height: 100%;
 }
 footer h5 {
   padding-bottom: 10px;
@@ -673,53 +748,31 @@ footer p {
   opacity: 0.9;
   line-height: 30px;
 }
-footer p a {
-  color: white;
-}
-footer ul li:hover {
-  transform: translateX(5px);
-  font-weight: 600;
-}
-footer ul {
-  padding-left: 0px;
-}
 
-footer .banking-card {
-  display: flex;
-  align-items: center;
-  /* justify-content: space-between; */
-}
-footer .banking-card > div {
-  width: 80px;
-  height: 60px;
-}
-footer .banking-card img {
-  padding-right: 10px;
-  width: 100%;
-  height: 100%;
-}
-footer .visibility-none {
-  visibility: hidden;
-}
 footer .social-logo-img {
   width: 40px;
   height: 40px;
   margin: 0px 10px;
 }
 footer .footer-logo-img {
-  width: 200px;
-  height: 100px;
+  width: 300px;
+  height: 150px;
 }
 
 /* About page  */
 .about-home {
   width: 100%;
-  height: calc(100vh - 95px);
+  /* height: calc(100vh - 95px); */
 }
 .about-home .img-container {
   width: 100%;
   height: 350px;
   object-fit: cover;
+}
+@media (max-width: 992px) {
+  .about-home .img-container {
+    height: 100%;
+  }
 }
 .about-home .img-container img {
   width: 100%;
