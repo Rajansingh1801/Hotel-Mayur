@@ -28,10 +28,9 @@ h2,
 h3,
 h4,
 h5,
-h6,
-p,
-span {
+h6 {
   margin-bottom: 0em;
+  color: #6f6f6f;
 }
 a,
 a > i {
@@ -48,6 +47,16 @@ ul li {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+.btn {
+  background-color: #507dd2;
+  border: 2px solid #507dd2;
+  color: white;
+  padding: 7px 25px;
+}
+.btn:hover {
+  background-color: white;
+  color: black;
 }
 
 /* color */
@@ -331,48 +340,6 @@ nav .navbar-toggler img {
 }
 
 /* ------------section 2--------------- */
-.check-in-out {
-  /* height: 100vh; */
-  position: absolute;
-  left: 0;
-  right: 0;
-  margin: auto;
-  bottom: 20px;
-  background-color: rgb(255, 255, 255, 0.7);
-  width: fit-content;
-  border-radius: 15px;
-}
-.check-in-out label {
-  font-size: 16px;
-  color: #272727;
-  margin-bottom: 16px;
-}
-.check-in-out :is(input, select) {
-  height: 50px;
-  padding: 0px 10px;
-  border: 1px solid #272727;
-  border-radius: 5px;
-}
-.check-in-out select {
-  appearance: none;
-  width: 50px;
-  text-align: center;
-}
-.check-in-out input[type="submit"] {
-  padding: 10px 40px;
-  display: flex;
-  align-items: end;
-  background-color: rgb(101, 64, 19);
-  color: white;
-}
-.check-in-out input[type="submit"]:hover {
-  background-color: #f4f2f2;
-  color: #272727;
-}
-.ui-datepicker-next .ui-widget-header .ui-icon {
-  background-image: url(../assets/icon/right-cal.png) !important;
-  background-position: center;
-}
 
 .address {
   background-color: #507dd2;
@@ -681,7 +648,7 @@ h1 {
 .contact-form .icon i {
   font-size: 40px;
   margin-right: 16px;
-  color: #bead8e;
+  color: #507dd2;
 }
 .contact-form .input-group {
   background-color: #f8f8f8;
@@ -749,11 +716,16 @@ footer p {
   line-height: 30px;
 }
 
-footer .social-logo-img {
+.social-logo-img {
   width: 40px;
   height: 40px;
   margin: 0px 10px;
 }
+.social-logo-img:hover {
+  width: 30px;
+  height: 30px;
+}
+
 footer .footer-logo-img {
   width: 300px;
   height: 150px;
@@ -1118,4 +1090,73 @@ footer .footer-logo-img {
   position: absolute;
   bottom: -100px;
   padding: 0px 16px;
+}
+
+/* Contact us */
+
+.contact-us p {
+  font-size: 18px;
+  padding: 5px 0px;
+  color: #181b2c;
+}
+.contact-us p i {
+  font-size: 24px;
+  margin-right: 16px;
+  color: #507dd2;
+}
+.contact-us p a {
+  color: #181b2c;
+}
+.contact-us input {
+  width: 100%;
+  border: 1px solid rgb(179, 176, 176);
+  height: 46px;
+  margin: 5px 0px;
+  padding: 5px;
+  color: #6f6f6f;
+}
+.contact-us textarea {
+  width: 100%;
+  padding: 5px;
+  margin: 5px 0px;
+  height: 130px;
+  border: 1px solid rgb(179, 176, 176);
+}
+
+.contact-us :is(textarea, input):where(:hover, :focus) {
+  border: 2px solid #507dd2;
+}
+
+.contact-us .btn {
+  padding: 10px 30px;
+  color: white;
+  width: fit-content;
+}
+.contact-us .btn:hover {
+  color: black;
+}
+
+.blogs .blogs-body {
+  box-shadow: 3px 3px 17px rgba(51, 51, 51, 0.3);
+}
+/* Blog */
+.blogs .blogs-body .blog-img {
+  width: 100%;
+}
+.blogs .blogs-body .blog-p {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 3; /* number of lines to show */
+  line-clamp: 3;
+  -webkit-box-orient: vertical;
+}
+
+.blog-detail .banner-img img {
+  height: 500px;
+  width: 100%;
+  object-fit: cover;
+}
+.blog-detail .blog-body p {
+  line-height: 40px;
 }
