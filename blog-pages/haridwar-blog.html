@@ -6,37 +6,33 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hotel Mayur</title>
-    <link rel="shortcut icon" href="./assets/logo/logo.png" type="image/x-icon">
+    <link rel="shortcut icon" href="../assets/logo/logo.png" type="image/x-icon">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="../css/style.css">
     <link href="https://fonts.googleapis.com/css2?family=Caudex:wght@700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./css/jquery-ui.css">
-    <link rel="stylesheet" href="/resources/demos/style.css">
-    <link rel="stylesheet" href="./assets/plugin/owl-carousel/owl.carousel.css">
-    <link rel="stylesheet" href="./assets/plugin/owl-carousel/owl.theme.css">
 </head>
 
 <body>
     <nav class="navbar navbar-expand-lg flex-all-prop bg-white" id="navbar_top"> <!--navbar-top -->
         <div class="container">
-            <a class="navbar-brand" href="./Index.html">
+            <a class="navbar-brand" href="../Index.html">
                 <div class="logo-img">
-                    <img src="./assets/logo/Mayur-Logo.jpg" alt="logo-img">
+                    <img src="../assets/logo/Mayur-Logo.jpg" alt="logo-img">
                 </div>
             </a>
 
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main_nav">
-                <img src="./assets/icon/menu.png" alt="" class="img-fluid">
+                <img src="../assets/icon/menu.png" alt="" class="img-fluid">
             </button>
             <div class="collapse navbar-collapse bg-white w-100" id="main_nav">
                 <div class="ms-auto">
                     <ul class="navbar-nav align-items-center ms-auto mb-2 mb-lg-0">
-                        <li class="nav-item active">
-                            <a class="nav-link" aria-current="page" href="./Index.html">Home</a>
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="../Index.html">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="./room.html">Room</a>
+                            <a class="nav-link" href="../room.html">Room</a>
                         </li>
 
                         <div class="position-relative about-nav">
@@ -46,25 +42,25 @@
                             </ul>
                             <div class="sub-nav w-100 position-absolute">
                                 <ul class="">
-                                    <li><a class="nav-link nowrap" href="./About us.html">about Hotel</a>
+                                    <li><a class="nav-link nowrap" href="../About us.html">about Hotel</a>
                                     </li>
-                                    <li><a class="nav-link nowrap" href="./about-haridwar.html">about
+                                    <li><a class="nav-link nowrap" href="../about-haridwar.html">about
                                             Haridwar</a>
                                     </li>
                                 </ul>
                             </div>
                         </div>
                         <li class="nav-item">
-                            <a class="nav-link" href="./travel_guide.html">TRAVEL GUIDE</a>
+                            <a class="nav-link" href="../travel_guide.html">TRAVEL GUIDE</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="./gallery.html">GALLERY</a>
+                            <a class="nav-link" href="../gallery.html">GALLERY</a>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link" href="../blog.html">BLOG</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="./blog.html">BLOG</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="./contact-us.html">CONTACT US</a>
+                            <a class="nav-link" href="../contact-us.html">CONTACT US</a>
                         </li>
                         <div class="book-now-btn ms-3">
                             <a href="#" class="btn">Book Now</a>
@@ -76,11 +72,11 @@
     </nav>
     <section class="blog-detail">
         <div class="container">
+            <h2 class="py-5 text-center">Discover Haridwar with us!</h2>
             <div class="row">
                 <div class="col-9">
-                    <h2 class="py-5 text-center">Discover Haridwar with us!</h2>
                     <div class="banner-img">
-                        <img src="./assets/images/blog/blog2.jpg" alt="" class="">
+                        <img src="../assets/images/blog/blog2.jpg" alt="" class="">
                     </div>
                     <div class="blog-body">
                         <h3 class="py-4">Haridwar: Holy City of Pilgrimage</h3>
@@ -123,36 +119,114 @@
 
                     </div>
                     <div>
-                        <form action="">
-                            <h4>Leave a Comment</h4>
+                        <form action="" class="my-5">
+                            <h4 class="py-3">Leave a Comment</h4>
                             <p>Your email address will not be published. All fields are required.</p>
 
                             <div class="row">
-                                <div class="col-6">
+                                <div class="col-6 p-4">
                                     <label for="">Your Name</label>
-                                    <input type="text">
+                                    <input type="text" required class="w-100">
                                 </div>
 
-                                <div class="col-6">
+                                <div class="col-6 p-4">
                                     <label for="">Your Email</label>
-                                    <input type="text">
+                                    <input type="text" required class="w-100">
 
                                 </div>
-                                <div class="col-12">
+                                <div class="col-12 p-4">
                                     <label for="">Your Messsage</label>
-                                    <textarea name="" id=""></textarea>
+                                    <textarea name="" id="" required class="w-100"></textarea>
 
                                 </div>
 
                             </div>
-                            <input type="submit" value="Post Comment" class="btn">
+                            <div class="text-center">
+                                <input type="submit" value="Post Comment" class="btn">
+                            </div>
                         </form>
                     </div>
                 </div>
                 <div class="col-3">
-                    <div>
-                        <div>
+                    <div class="mb-4">
+                        <div class="p-3 bg-f5f5f5">
+                            <h5 class="pb-2">Need help with Haridwar Booking?</h5>
+                            <p>For any assistance regarding Haridwar booking, Haridwar packages, Haridwar
+                                resorts, Haridwar safari or jim
+                                corbett tours our team advisors are available 24/7 to help you.</p>
+                            <p class="d-flex align-items-center text-white mb-0"><i
+                                    class="ph-fill ph-phone text-blue pe-2 "></i><a href="tel:+91 9917738868">+91
+                                    9917738868</a>
+                            </p>
+                            <p class="d-flex align-items-center mb-0"><i
+                                    class="ph-fill ph-envelope-open text-blue pe-2"></i><a
+                                    href="mailto: info@hotelmayurharidwar.com">info@hotelmayurharidwar.com</a>
+                            </p>
+                        </div>
+                    </div>
 
+                    <div class="mb-4">
+                        <div class="p-3 bg-f5f5f5">
+                            <h5 class="pb-2">Why Book with us?</h5>
+                            <p class="d-flex align-items-center"><i class="ph-fill ph-bowl-food text-blue pe-2 "></i>
+                                <span>
+                                    All meals included Haridwar Hotel Packages
+                                </span>
+                            </p>
+                            <p class="d-flex align-items-center"><i class="ph-fill ph-buildings text-blue pe-2"></i>Tie
+                                ups with 100+ Haridwar Resorts
+                            </p>
+                            <p class="d-flex align-items-center"><i
+                                    class="ph-fill ph-thumbs-up text-blue pe-2"></i>Hassle free
+                                bookings for dhikala, bijrani and other zones
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="mb-4">
+                        <div class="p-3 bg-f5f5f5">
+                            <h5 class="pb-2">About Me</h5>
+                            <div class="blog-about-img py-3">
+                                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/60/John_Cena_July_2018.jpg/1200px-John_Cena_July_2018.jpg"
+                                    alt="" class="img-fluid">
+                            </div>
+                            <p>Hey there! I'm David, an American with a passion for adventure, the outdoors, and all
+                                things travel. <br>
+
+                                My wife Intan and I are usually in our second home Bali, but our journeys take us to
+                                destinations all over the world.</p>
+                            <script src="https://static.elfsight.com/platform/platform.js" data-use-service-core
+                                defer></script>
+                            <div class="elfsight-app-9a47fb44-75ae-45af-8e9a-13c514fd0524"></div>
+                        </div>
+                    </div>
+
+                    <div class="mb-4">
+                        <div class="p-3 bg-f5f5f5">
+                            <h5 class="pb-2">social</h5>
+                            <div class="d-flex mb-3">
+                                <div>
+                                    <a href="#">
+                                        <img src="../assets/images/social/tripadvisor.png" alt=""
+                                            class="social-logo-img">
+                                    </a>
+                                </div>
+                                <div>
+                                    <a href="#">
+                                        <img src="../assets/images/social/facebook.png" alt="" class="social-logo-img">
+                                    </a>
+                                </div>
+                                <div>
+                                    <a href="#">
+                                        <img src="../assets/images/social/instagram.png" alt="" class="social-logo-img">
+                                    </a>
+                                </div>
+                                <div>
+                                    <a href="#">
+                                        <img src="../assets/images/social/whatsapp.png" alt="" class="social-logo-img">
+                                    </a>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -163,27 +237,27 @@
         <div class="container w-100">
             <div class="footer-body">
                 <div class="footer-logo-img my-3">
-                    <img src="./assets/logo/footer-Mayur-Logo.png" alt="" class="img-fluid">
+                    <img src="../assets/logo/footer-Mayur-Logo.png" alt="" class="img-fluid">
                 </div>
                 <div class="d-flex mb-3">
                     <div>
                         <a href="#">
-                            <img src="./assets/images/social/tripadvisor.png" alt="" class="social-logo-img">
+                            <img src="../assets/images/social/tripadvisor.png" alt="" class="social-logo-img">
                         </a>
                     </div>
                     <div>
                         <a href="#">
-                            <img src="./assets/images/social/facebook.png" alt="" class="social-logo-img">
+                            <img src="../assets/images/social/facebook.png" alt="" class="social-logo-img">
                         </a>
                     </div>
                     <div>
                         <a href="#">
-                            <img src="./assets/images/social/instagram.png" alt="" class="social-logo-img">
+                            <img src="../assets/images/social/instagram.png" alt="" class="social-logo-img">
                         </a>
                     </div>
                     <div>
                         <a href="#">
-                            <img src="./assets/images/social/whatsapp.png" alt="" class="social-logo-img">
+                            <img src="../assets/images/social/whatsapp.png" alt="" class="social-logo-img">
                         </a>
                     </div>
                 </div>
@@ -210,9 +284,7 @@
         crossorigin="anonymous"></script>
     <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js'></script>
     <script src="https://unpkg.com/@phosphor-icons/web"></script>
-    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
-    <script src="./assets/plugin/owl-carousel/owl.carousel.js"></script>
-    <script src="./js/script.js"></script>
+    <script src="../js/script.js"></script>
 </body>
 
 </html>
