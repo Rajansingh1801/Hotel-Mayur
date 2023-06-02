@@ -674,7 +674,6 @@ h1 {
   background-color: #507dd2;
   text-decoration: none;
   padding: 7px 20px;
-  margin: 16px 0px;
   border: 2px solid #507dd2;
 }
 .contact-form .main-btn:hover {
@@ -1157,6 +1156,9 @@ footer .footer-logo-img {
   line-clamp: 3;
   -webkit-box-orient: vertical;
 }
+.blogs .blogs-body .btn {
+  margin: 10px 0px;
+}
 
 .blog-detail .banner-img img {
   height: 500px;
@@ -1190,4 +1192,8 @@ footer .footer-logo-img {
 .blog-detail .social-logo-img {
   width: 30px;
   height: 30px;
+}
+.blog-details .email {
+  word-wrap: break-word;
+  white-space: pre-wrap;
 }
