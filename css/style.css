@@ -722,15 +722,31 @@ footer p {
   /* line-height: 30px; */
   margin-bottom: 0;
 }
+footer .social-logo-container {
+  /* padding: 10px; */
+}
 
 .social-logo-img {
   width: 40px;
   height: 40px;
   margin: 0px 10px;
+  border: 3px solid white;
+  border-radius: 10px;
+  padding: 5px;
+  /* object-fit: contain; */
 }
-.social-logo-img:hover {
-  width: 30px;
-  height: 30px;
+
+footer .social-logo-img-blue {
+  display: none;
+}
+.social-logo-container:hover .social-logo-img-blue {
+  border: 3px solid #507dd2;
+  display: block;
+  /* width: 30px; */
+  /* height: 30px; */
+}
+.social-logo-container:hover .social-logo-img-white {
+  display: none;
 }
 
 footer .footer-logo-img {
