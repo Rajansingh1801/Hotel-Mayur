@@ -1113,6 +1113,7 @@ footer .footer-logo-img {
   position: absolute;
   bottom: -100px;
   padding: 0px 16px;
+  text-transform: uppercase;
 }
 
 /* Contact us */
